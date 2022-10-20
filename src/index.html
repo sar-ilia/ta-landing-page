@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <header class="promo">
         <div class="container">
             <nav class="promo__nav">
                 <div class="promo__logo">Travel agency</div>
-                <div class="promo__wrapper">
+                <nav class="promo__wrapper">
                     <ul class="promo__list">
                         <li>
                             <a href="#">Review</a>
@@ -31,7 +31,7 @@
                         </li>
                         <button class="promo__btn">Blog</button>
                     </ul>
-                </div>
+                </nav>
             </nav>
 
             <div class="promo__titles">
@@ -41,98 +41,272 @@
                 </div>
             </div>
         </div>
-    </section>
+    </header>
+    <main>
+        <section class="offer">
+            <div class="container">
+                <div id="offer" class="title offer__title">Special Upcoming Offers</div>
+                <div class="offer__div">
+                    <ul class="offer__tabs">
+                        <li class="offer__tab offer__tab_active">Team</li>
+                        <li class="offer__tab">Couple</li>
+                        <li class="offer__tab">Family</li>
+                    </ul>
+                </div>
     
-    <section class="offer">
-        <div class="container">
-            <div id="offer" class="title offer__title">Special Upcoming Offers</div>
-            <div class="offer__div">
-                <ul class="offer__tabs">
-                    <li class="offer__tab offer__tab_active">Team</li>
-                    <li class="offer__tab">Couple</li>
-                    <li class="offer__tab">Family</li>
-                </ul>
+                <div class="offer__wrapper">
+                    <div class="offer__contant offer__contant_active">
+                        <div class="offer-item">
+                            <img src="img/logo_sea.png" alt="logo_sea">
+                            <time class="offer-item__time">14 FEB 2023</time>
+                            <div class="offer-item__info">
+                                <div class="offer-item__type offer-item__type_relax">Relax</div>
+                                <div class="offer-item__day">3 Days, 3 Nights</div>
+                            </div>
+                            <div class="offer-item__title">Loga Sea</div>
+                            <div class="offer-item__divader">
+                                <div class="offer-item__price">700$<span>/Person</span></div>
+                                <button class="offer-item__btn">Book Now</button>
+                            </div>
+                        </div>
+                        <div class="offer-item">
+                            <img src="img/Ansgar_Scheffold.png" alt="Ansgar_Scheffold">
+                            <time class="offer-item__time">18 JUN 2023</time>
+                            <div class="offer-item__info">
+                                <div class="offer-item__type offer-item__type_adventure">Adventure</div>
+                                <div class="offer-item__day">4 Days, 3 Nights</div>
+                            </div>
+                            <div class="offer-item__title">Ansgar Scheffold</div>
+                            <div class="offer-item__divader">
+                                <div class="offer-item__price">400$<span>/Person</span></div>
+                                <button class="offer-item__btn">Book Now</button>
+                            </div>
+                        </div>
+                        <div class="offer-item">
+                            <img src="img/Dachstein.jpg" alt="Dachstein" class="offer-item__img">
+                            <time class="offer-item__time">22 SEP 2023</time>
+                            <div class="offer-item__info">
+                                <div class="offer-item__type offer-item__type_extreme">Extreme</div>
+                                <div class="offer-item__day">2 Days, 1 Nights</div>
+                            </div>
+                            <div class="offer-item__title">Dachstein</div>
+                            <div class="offer-item__divader">
+                                <div class="offer-item__price">170$<span>/Person</span></div>
+                                <button class="offer-item__btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="offer__contant">
+                        <div class="offer-item">
+                            <img src="img/logo_sea.png" alt="logo_sea">
+                            <time class="offer-item__time">14 FEB 2023</time>
+                            <div class="offer-item__info">
+                                <div class="offer-item__type offer-item__type_relax">Relax</div>
+                                <div class="offer-item__day">3 Days, 3 Nights</div>
+                            </div>
+                            <div class="offer-item__title">Loga Sea</div>
+                            <div class="offer-item__divader">
+                                <div class="offer-item__price">700$<span>/Person</span></div>
+                                <button class="offer-item__btn">Book Now</button>
+                            </div>
+                        </div>
+                        <div class="offer-item">
+                            <img src="img/Ansgar_Scheffold.png" alt="Ansgar_Scheffold">
+                            <time class="offer-item__time">18 JUN 2023</time>
+                            <div class="offer-item__info">
+                                <div class="offer-item__type offer-item__type_adventure">Adventure</div>
+                                <div class="offer-item__day">4 Days, 3 Nights</div>
+                            </div>
+                            <div class="offer-item__title">Ansgar Scheffold</div>
+                            <div class="offer-item__divader">
+                                <div class="offer-item__price">400$<span>/Person</span></div>
+                                <button class="offer-item__btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
+        </section>
 
-            <div class="offer__wrapper">
-                <div class="offer__contant offer__contant_active">
-                    <div class="offer-item">
-                        <img src="img/logo_sea.png" alt="logo_sea">
-                        <time class="offer-item__time">14 FEB 2023</time>
-                        <div class="offer-item__info">
-                            <div class="offer-item__type offer-item__type_relax">Relax</div>
-                            <div class="offer-item__day">3 Days, 3 Nights</div>
+        <section class="travel">
+            <div class="container">
+                <div class="travel__wrapper">
+                    <div class="travel__photo">
+                        <img src="img/travel.png" alt="travel">
+                        <div class="travel__div travel__div-top">
+                            <div class="travel__number">300+</div>
+                            <div class="travel__text">DESTINATIONS</div>
                         </div>
-                        <div class="offer-item__title">Loga Sea</div>
-                        <div class="offer-item__divader">
-                            <div class="offer-item__price">700$<span>/Person</span></div>
-                            <button class="offer-item__btn">Book Now</button>
+                        <div class="travel__div travel__div-middle">
+                            <div class="travel__number">5000+</div>
+                            <div class="travel__text">TOURISTS</div>
                         </div>
-                    </div>
-                    <div class="offer-item">
-                        <img src="img/Ansgar_Scheffold.png" alt="Ansgar_Scheffold">
-                        <time class="offer-item__time">18 JUN 2023</time>
-                        <div class="offer-item__info">
-                            <div class="offer-item__type offer-item__type_adventure">Adventure</div>
-                            <div class="offer-item__day">4 Days, 3 Nights</div>
-                        </div>
-                        <div class="offer-item__title">Ansgar Scheffold</div>
-                        <div class="offer-item__divader">
-                            <div class="offer-item__price">400$<span>/Person</span></div>
-                            <button class="offer-item__btn">Book Now</button>
+                        <div class="travel__div travel__div-down">
+                            <div class="travel__number">150+</div>
+                            <div class="travel__text">HOTELS</div>
                         </div>
                     </div>
-                    <div class="offer-item">
-                        <img src="img/Dachstein.jpg" alt="Dachstein" class="offer-item__img">
-                        <time class="offer-item__time">22 SEP 2023</time>
-                        <div class="offer-item__info">
-                            <div class="offer-item__type offer-item__type_extreme">Extreme</div>
-                            <div class="offer-item__day">2 Days, 1 Nights</div>
+                    <div class="travel__description">
+                        <div class="title travel__title">Travel Any Corner of The World With Us</div>
+                        <div class="travel__descr">
+                            Would you explore nature paradise in the world, let’s find the best destination in world with us, Would you explore nature paradise in the world, let’s find the best destination in world with us. Would you explore nature paradise in the world, let’s find the best destination in world with us.
+                            <br><br>
+                            Would you explore nature paradise in the world, let’s find the best destination in world with us.
                         </div>
-                        <div class="offer-item__title">Dachstein</div>
-                        <div class="offer-item__divader">
-                            <div class="offer-item__price">170$<span>/Person</span></div>
-                            <button class="offer-item__btn">Book Now</button>
+                        <button class="travel__btn">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommend">
+            <div class="container">
+                <div class="title">Recommended Destination</div>
+                <div class="recommend__div">
+                    <ul class="recommend__tabs">
+                        <li class="recommend__tab recommend__tab_active">Populor</li>
+                        <li class="recommend__tab">Adventure</li>
+                        <li class="recommend__tab">Beath</li>
+                    </ul>
+                </div>
+                <div class="recommend__wrapper">
+                    <div class="recommend__contant recommend__contant_active">
+                        <div class="recommend__item">
+                            <img src="img/Kina_Mountain_1.png" alt="Kina_Mountain" class="recommend__item-img">
+                            <div class="recommend__item-star">
+                                <img src="icons/Star.svg" alt="Star">
+                                <div class="recommend__item-number">3.4</div>
+                            </div>
+                            <div class="recommend__item-titel">Kina Mountain</div>
+                            <div class="recommend__item-location">
+                                <img src="icons/Location.svg" alt="Location"></img>
+                                <div class="recommend__item-text">Cambodia</div>
+                            </div>
+                        </div>
+                        <div class="recommend__item">
+                            <img src="img/Kina_Mountain_2.png" alt="Kina_Mountain" class="recommend__item-img">
+                            <div class="recommend__item-star">
+                                <img src="icons/Star.svg" alt="Star">
+                                <div class="recommend__item-number">4.5</div>
+                            </div>
+                            <div class="recommend__item-titel">Kina Mountain</div>
+                            <div class="recommend__item-location">
+                                <img src="icons/Location.svg" alt="Location"></img>
+                                <div class="recommend__item-text">Cambodia</div>
+                            </div>
+                        </div>
+                        <div class="recommend__item">
+                            <img src="img/Kina_Mountain_3.png" alt="Kina_Mountain" class="recommend__item-img">
+                            <div class="recommend__item-star">
+                                <img src="icons/Star.svg" alt="Star">
+                                <div class="recommend__item-number">4.2</div>
+                            </div>
+                            <div class="recommend__item-titel">Kina Mountain</div>
+                            <div class="recommend__item-location">
+                                <img src="icons/Location.svg" alt="Location"></img>
+                                <div class="recommend__item-text">Cambodia</div>
+                            </div>
+                        </div>
+                        <div class="recommend__item">
+                            <img src="img/Kina_Mountain_4.png" alt="Kina_Mountain" class="recommend__item-img">
+                            <div class="recommend__item-star">
+                                <img src="icons/Star.svg" alt="Star">
+                                <div class="recommend__item-number">3.5</div>
+                            </div>
+                            <div class="recommend__item-titel">Kina Mountain</div>
+                            <div class="recommend__item-location">
+                                <img src="icons/Location.svg" alt="Location"></img>
+                                <div class="recommend__item-text">Cambodia</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recommend__contant">
+                        <div class="recommend__item">
+                            <img src="img/Kina_Mountain_1.png" alt="Kina_Mountain" class="recommend__item-img">
+                            <div class="recommend__item-star">
+                                <img src="icons/Star.svg" alt="Star">
+                                <div class="recommend__item-number">3.4</div>
+                            </div>
+                            <div class="recommend__item-titel">Kina Mountain</div>
+                            <div class="recommend__item-location">
+                                <img src="icons/Location.svg" alt="Location"></img>
+                                <div class="recommend__item-text">Cambodia</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="offer__contant">
-                    <div class="offer-item">
-                        <img src="img/logo_sea.png" alt="logo_sea">
-                        <time class="offer-item__time">14 FEB 2023</time>
-                        <div class="offer-item__info">
-                            <div class="offer-item__type offer-item__type_relax">Relax</div>
-                            <div class="offer-item__day">3 Days, 3 Nights</div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__wrapper">
+                    <div class="reviews__review">
+                        <div class="reviews__text">
+                            Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.
                         </div>
-                        <div class="offer-item__title">Loga Sea</div>
-                        <div class="offer-item__divader">
-                            <div class="offer-item__price">700$<span>/Person</span></div>
-                            <button class="offer-item__btn">Book Now</button>
+                        <img src="icons/quotes.svg" alt="quotes" class="reviews__quotes">
+                        <div class="reviews__name">-Vand D</div>
+                        <div class="reviews__ps">Happy Travel agency</div>
+                        <div class="reviews__photo">
+                            <img src="icons/vand.png" alt="vand">
+                            <div class="reviews__photo-star">
+                                <img src="icons/Star.svg" alt="Star">
+                                <div class="reviews__photo-number">4.5</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="offer-item">
-                        <img src="img/Ansgar_Scheffold.png" alt="Ansgar_Scheffold">
-                        <time class="offer-item__time">18 JUN 2023</time>
-                        <div class="offer-item__info">
-                            <div class="offer-item__type offer-item__type_adventure">Adventure</div>
-                            <div class="offer-item__day">4 Days, 3 Nights</div>
+
+                    <div class="reviews__review">
+                        <div class="reviews__text">
+                            Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.
                         </div>
-                        <div class="offer-item__title">Ansgar Scheffold</div>
-                        <div class="offer-item__divader">
-                            <div class="offer-item__price">400$<span>/Person</span></div>
-                            <button class="offer-item__btn">Book Now</button>
+                        <img src="icons/quotes.svg" alt="quotes" class="reviews__quotes">
+                        <div class="reviews__name">-Tru Vio</div>
+                        <div class="reviews__ps">Happy Travel agency</div>
+                        <div class="reviews__photo">
+                            <img src="icons/tru.png" alt="tru">
+                            <div class="reviews__photo-star">
+                                <img src="icons/Star.svg" alt="Star">
+                                <div class="reviews__photo-number">4.9</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
-    <a href="#" class="pageup">
-        <img src="icons/arrow.svg" alt="arrow">
-    </a>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__register">
+                    <div class="title footer__title">
+                        Don’t Miss The 50% Discount if You register Today
+                    </div>
+                    <button class="footer__btn">Register Today</button>
+                </div>
+                <div class="footer__down">
+                    <div class="footer__llc">© 2022 Travel agency LLC - All right reserved.</div>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#">Review</a>
+                        </li>
+                        <li>
+                            <a href="#">Tips</a>
+                        </li>
+                        <li>
+                            <a href="#">Alerts</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/script.js"></script>

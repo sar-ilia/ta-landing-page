@@ -12,4 +12,11 @@ $(document).ready(function(){
             $('.pageup').fadeOut();
         }
     });
+
+    $('ul.recommend__tabs').on('click', 'li:not(.recommend__tab_active)', function() {
+        $(this)
+          .addClass('recommend__tab_active').siblings().removeClass('recommend__tab_active')
+          .closest('div.container').find('div.recommend__contant').removeClass('recommend__contant_active').eq($(this).index()).addClass('recommend__contant_active');
+    });
+
 });

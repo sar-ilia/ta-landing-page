@@ -52,7 +52,9 @@
         font-size: 60px;
         line-height: 96px;
         text-align: center;
-        color: #FFFFFF;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #FFFFFF;
         margin-bottom: 0;
     }
     &__subtitle {

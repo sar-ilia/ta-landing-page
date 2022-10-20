@@ -1,0 +1,81 @@
+.reviews {
+    padding: 210px 0 125px 0;
+    background-color: #f5f7ff;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 575px);
+        grid-template-rows: 410px;
+        gap: 30px;
+    }
+    &__review {
+        padding: 84px 28px 65px 28px;
+        background: #FFFFFF;
+        border-radius: 50px;
+        position: relative;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 42px;
+        text-align: center;
+        color: #000000;
+    }
+    &__quotes {
+        position: absolute;
+        top: 36px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__name {
+        margin-top: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 42px;
+        text-align: center;
+        color: #3E86F5;
+    }
+    &__ps {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 42px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    &__photo {
+        position: absolute;
+        padding-top: 24px;
+        width: 182.9px;
+        height: 134px;
+        top: 331px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 70%;
+        background: #FFFFFF;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        &-star {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 55px;
+            height: 20px;
+            top: 32px;
+            left: 112px;
+            background: #FFFFFF;
+            border-radius: 25px;
+            padding: 0 10px;
+            img {
+                display: block;
+                width: 15px;
+            }
+        }
+        &-number {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 22px;
+            color: #000000;
+        }
+    }
+}
