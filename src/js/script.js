@@ -20,3 +20,21 @@ $(document).ready(function(){
     });
 
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('.promo__list'),
+    menuItem = document.querySelectorAll('.promo__wrapper'),
+    hamburger = document.querySelector('.promo__hamburger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('promo__hamburger_active');
+        menu.classList.toggle('promo__list_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('promo__hamburger_active');
+            menu.classList.toggle('promo__list_active');
+        })
+    })
+})

@@ -1,11 +1,14 @@
 .reviews {
-    padding: 210px 0 125px 0;
+    padding: 70px 0 125px 0;
     background-color: #f5f7ff;
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fit, 575px);
         grid-template-rows: 410px;
-        gap: 30px;
+        grid-auto-rows: 410px;
+        column-gap: 30px;
+        row-gap: 70px;
+        justify-content: center;
     }
     &__review {
         padding: 84px 28px 65px 28px;

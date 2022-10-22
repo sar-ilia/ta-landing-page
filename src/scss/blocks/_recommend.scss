@@ -33,6 +33,7 @@
         margin-top: 80px;
         display: grid;
         grid-template-columns: repeat(auto-fit, 280px);
+        justify-content: center;
         gap: 20px;
     }
     &__contant {
