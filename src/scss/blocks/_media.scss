@@ -88,7 +88,7 @@
     .footer {
         padding: 40px 0;
         &__register {
-            padding: 114px 100px;
+            padding: 70px 100px;
             width: 960px;
         }
     }
@@ -175,8 +175,12 @@
     }
     .footer {
         &__register {
-            padding: 114px 10px;
+            padding: 60px 10px;
             width: 720px;
+        }
+        &__title {
+            font-size: 27px;
+            line-height: 27px;
         }
         &__down {
             margin-top: 40px;
@@ -261,7 +265,12 @@
     }
     .footer {
         &__register {
+            padding-top: 70px;
             width: 540px;
+        }
+        &__title {
+            font-size: 20px;
+            line-height: 20px;
         }
     }
 }
@@ -410,10 +419,6 @@
             height: 380px;
             border-radius: 60px;
         }
-        &__title {
-            font-size: 29px;
-            line-height: 50px;
-        }
         &__down {
             margin-top: 20px;
         }
@@ -423,6 +428,21 @@
         &__links {
             a {
                 font-size: 20px;
+            }
+        }
+        &__timer {
+            .timer {
+                margin-top: 20px;
+                &__block {
+                    margin-right: 5px;
+                    width: 90px;
+                    height: 70px;
+                    font-size: 12px;
+                    span {
+                        margin-bottom: 0px;
+                        font-size: 30px;
+                    }
+                }
             }
         }
     }
