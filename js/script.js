@@ -17,77 +17,46 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Tabs
     
-    const tabs = document.querySelectorAll('.offer__tab'),
-          tabsContent = document.querySelectorAll('.offer__contant'),
-          tabsParent = document.querySelector('.offer__tabs');
+    function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, contantActiveSelector, tabActiveSelector) {
+        const tabs = document.querySelectorAll(tabsSelector),
+          tabsContent = document.querySelectorAll(tabsContentSelector),
+          tabsParent = document.querySelector(tabsParentSelector);
 
-    function hideTabContent() {
-        tabsContent.forEach(item => {
-            item.classList.remove('offer__contant_active');
-        });
+        function hideTabContent() {
+            tabsContent.forEach(item => {
+                item.classList.remove(contantActiveSelector);
+            });
 
-        tabs.forEach(item => {
-            item.classList.remove('offer__tab_active');
-        });
-    }
-
-    function showTabContent(i = 0) {
-        tabsContent[i].classList.add('offer__contant_active');
-        tabs[i].classList.add('offer__tab_active');
-    }
-
-    hideTabContent();
-    showTabContent();
-
-    tabsParent.addEventListener('click', (event) => {
-        const target = event.target;
-
-        if(target && target.classList.contains('offer__tab')) {
-            tabs.forEach((item, i) => {
-                if(target == item) {
-                    hideTabContent();
-                    showTabContent(i);
-                }
+            tabs.forEach(item => {
+                item.classList.remove(tabActiveSelector);
             });
         }
-    });
 
-    // Tabs 2 (optimize in the future!)
-
-    const tabsRec = document.querySelectorAll('.recommend__tab'),
-          tabsContentRec = document.querySelectorAll('.recommend__contant'),
-          tabsParentRec = document.querySelector('.recommend__tabs');
-
-    function hideTabContentRec() {
-        tabsContentRec.forEach(item => {
-            item.classList.remove('recommend__contant_active');
-        });
-
-        tabsRec.forEach(item => {
-            item.classList.remove('recommend__tab_active');
-        });
-    }
-
-    function showTabContentRec(i = 0) {
-        tabsContentRec[i].classList.add('recommend__contant_active');
-        tabsRec[i].classList.add('recommend__tab_active');
-    }
-
-    hideTabContentRec();
-    showTabContentRec();
-
-    tabsParentRec.addEventListener('click', (event) => {
-        const target = event.target;
-
-        if(target && target.classList.contains('recommend__tab')) {
-            tabsRec.forEach((item, i) => {
-                if(target == item) {
-                    hideTabContentRec();
-                    showTabContentRec(i);
-                }
-            });
+        function showTabContent(i = 0) {
+            tabsContent[i].classList.add(contantActiveSelector);
+            tabs[i].classList.add(tabActiveSelector);
         }
-    });
+
+        hideTabContent();
+        showTabContent();
+
+        tabsParent.addEventListener('click', (event) => {
+            const target = event.target;
+
+            if(target && target.classList.contains(tabsSelector.slice(1))) {
+                tabs.forEach((item, i) => {
+                    if(target == item) {
+                        hideTabContent();
+                        showTabContent(i);
+                    }
+                });
+            }
+        });
+    }
+
+    tabs('.offer__tab', '.offer__contant', '.offer__tabs', 'offer__contant_active', 'offer__tab_active');
+
+    tabs('.recommend__tab', '.recommend__contant', '.recommend__tabs', 'recommend__contant_active', 'recommend__tab_active');
     
     // Hamburger
     
@@ -108,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Timer
 
-    const deadLine = '2023-01-01';
+    const deadLine = '2023-02-01';
 
     function getDateDifference(endTime) {
         let days, hours, minutes, seconds;
