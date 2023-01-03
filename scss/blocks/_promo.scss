@@ -1,13 +1,15 @@
 .promo {
     min-height: 100vh;
-    position: relative;
     margin: 0 auto;
     background: url(../img/bg.png) no-repeat 50%/cover;
+    //background-size: 130%;
     position: relative;
+    transition: .8s;
     &__nav {
         display: flex;
         justify-content: space-between;
         padding-top: 27px;
+        transition: .6s;
     }
     &__logo {
         font-weight: 500;
@@ -90,6 +92,7 @@
         -webkit-text-stroke-width: 1.5px;
         -webkit-text-stroke-color: #FFFFFF;
         margin-bottom: 0;
+        transition: .6s;
     }
     &__subtitle {
         margin-top: 25px;
@@ -98,5 +101,6 @@
         line-height: 200%;
         text-align: center;
         color: #FFFFFF;
+        transition: .6s;
     }
 }

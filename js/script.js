@@ -139,4 +139,77 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setClock('.timer', deadLine);
 
+    //animation
+
+    const bg = document.querySelector('.promo'),
+          nav = document.querySelector('.promo__nav'),
+          h1 = document.querySelector('.promo__title'),
+          h2 = document.querySelector('.promo__subtitle');
+    
+
+    window.addEventListener('scroll', () => {
+        const scroll = document.documentElement.scrollTop;
+
+        if (scroll > 30) {
+            bg.style.backgroundSize = "120%";
+            nav.style.opacity = '.2';
+            nav.style.translate = "0 -40px";
+            nav.style.scale = ".5";
+        } else {
+            bg.style.backgroundSize = "100%";
+            nav.style.cssText = `
+                opacity = 1;
+                translate = 0;
+                scale = 1;
+            `;
+        }
+
+        if (scroll > 120) {
+            h1.style.opacity = '.2';
+            h1.style.translate = "0 -40px";
+            h1.style.scale = ".5";
+        } else {
+            h1.style.cssText = `
+                opacity = 1;
+                translate = 0;
+                scale = 1;
+            `;
+        }
+
+        if (scroll > 250) {
+            h2.style.opacity = '.2';
+            h2.style.translate = "0 -40px";
+            h2.style.scale = ".5";
+        } else {
+            h2.style.cssText = `
+                opacity = 1;
+                translate = 0;
+                scale = 1;
+            `;
+        }
+    });
+
+    //parallax
+
+    const front = document.querySelectorAll('.travel__div'),
+          back = document.querySelector('.travel__img'),
+          container = document.querySelector('.travel__photo'),
+          sFront = 100,
+          sBack = 80;
+
+    container.addEventListener('mousemove', e => {
+        const x = e.clientX,
+              y = e.clientY;
+        
+        front.forEach(e => {
+            e.style.transform = `
+                translate(${x / sFront}%, ${y / sFront}%)
+            `;
+        });
+
+        back.style.transform = `
+            translate(${x / sBack}%, ${y / sBack}%)
+        `;
+    });
+
 });
