@@ -141,8 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //animation
 
-    const bg = document.querySelector('.promo'),
-          nav = document.querySelector('.promo__nav'),
+    const nav = document.querySelector('.promo__nav'),
           h1 = document.querySelector('.promo__title'),
           h2 = document.querySelector('.promo__subtitle');
     
@@ -151,12 +150,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const scroll = document.documentElement.scrollTop;
 
         if (scroll > 30) {
-            bg.style.backgroundSize = "120%";
             nav.style.opacity = '.2';
             nav.style.translate = "0 -40px";
             nav.style.scale = ".5";
         } else {
-            bg.style.backgroundSize = "100%";
             nav.style.cssText = `
                 opacity = 1;
                 translate = 0;
